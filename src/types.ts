@@ -380,8 +380,10 @@ export function isOptionalProperty(
     options.useOptionals === true || options.useOptionals === "messages" || options.useOptionals === "all";
   const optionalAll = options.useOptionals === "all";
   const deprecatedOnly = options.useOptionals === "deprecatedOnly" && field.options && field.options.deprecated;
+  const repeatedOptional = field?.options?._unknownFields?.[7777 * 8]?.pop()?.includes(1);
 
   return (
+    (repeatedOptional && isRepeated(field)) ||
     (optionalMessages && isMessage(field)) ||
     ((optionalAll || deprecatedOnly) && !messageOptions?.mapEntry) ||
     // file is proto2, we have enabled proto2 optionals, and the field itself is optional

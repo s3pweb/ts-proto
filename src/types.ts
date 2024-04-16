@@ -382,7 +382,7 @@ export function isOptionalProperty(
   const deprecatedOnly = options.useOptionals === "deprecatedOnly" && field.options && field.options.deprecated;
 
   return (
-    (optionalMessages && isMessage(field) && !isRepeated(field)) ||
+    (optionalMessages && isMessage(field)) ||
     ((optionalAll || deprecatedOnly) && !messageOptions?.mapEntry) ||
     // file is proto2, we have enabled proto2 optionals, and the field itself is optional
     (!isProto3Syntax &&

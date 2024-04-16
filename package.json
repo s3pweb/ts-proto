@@ -1,6 +1,6 @@
 {
   "name": "ts-proto",
-  "version": "1.172.0",
+  "version": "custom",
   "description": "",
   "main": "build/plugin.js",
   "repository": "github:stephenh/ts-proto",
@@ -12,6 +12,7 @@
     "build": "yarn tsc",
     "build:test": "yarn proto2bin && yarn proto2pbjs && yarn bin2ts",
     "prepare": "yarn build",
+    "prepack": "yarn build",
     "proto2bin": "docker compose run --rm protoc update-bins.sh",
     "proto2bin-node": "docker compose run --rm node update-bins.sh",
     "proto2pbjs": "docker compose run --rm protoc pbjs.sh",

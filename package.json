@@ -24,7 +24,7 @@
     "watch": "tsx integration/watch.ts"
   },
   "files": [
-    "build"
+    "build/"
   ],
   "keywords": [],
   "author": "",
@@ -71,6 +71,5 @@
     "protobufjs": "^7.2.4",
     "ts-poet": "^6.7.0",
     "ts-proto-descriptors": "1.15.0"
-  },
-  "packageManager": "yarn@3.6.0"
+  }
 }

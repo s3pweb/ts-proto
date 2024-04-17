@@ -1,8 +1,0 @@
-syntax = "proto3";
-package foo;
-import "bar.proto";
-
-message Foo {
-  string name = 1;
-  bar.Bar bar = 2;
-}

@@ -1,1 +1,0 @@
-enumsAsLiterals=true

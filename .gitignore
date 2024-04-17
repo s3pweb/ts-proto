@@ -1,18 +1,10 @@
-node_modules/
-build/
-/.idea
-/.vscode
-/.log
-/integration/*/pbjs.js
-/integration/*/pbjs.d.ts
-coverage/
-yarn-error.log
+# Ignore everything
+*
 
-# Yarn
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# Keep package files
+!.gitignore
+!build/*
+!LICENSE
+!README.markdown
+!package.json
+!protoc-gen-ts_proto

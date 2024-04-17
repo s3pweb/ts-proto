@@ -1,4 +1,0 @@
-*.sh text eol=lf
-parameters.txt text eol=lf
-protoc-gen-dump text eol=lf
-protoc-gen-ts_proto text eol=lf

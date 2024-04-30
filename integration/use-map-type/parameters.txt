@@ -1,1 +1,0 @@
-useMapType=true

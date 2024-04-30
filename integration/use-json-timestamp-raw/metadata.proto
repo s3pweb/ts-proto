@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-import "google/protobuf/timestamp.proto";
-
-message Metadata {
-    google.protobuf.Timestamp last_edited = 1;
-}

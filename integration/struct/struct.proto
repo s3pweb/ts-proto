@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-import "google/protobuf/struct.proto";
-
-message StructMessage {
-  google.protobuf.Struct value = 1;
-}

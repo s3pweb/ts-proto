@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-import "google/protobuf/wrappers.proto";
-
-message Point {
-  bytes data = 1;
-  google.protobuf.BytesValue dataWrapped = 2;
-}
-

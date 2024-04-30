@@ -1,1 +1,0 @@
-metadataType=Foo@./some-file,outputServices=generic-definitions,outputServices=default

@@ -1,2 +1,0 @@
-useDate=false
-useJsonTimestamp=raw

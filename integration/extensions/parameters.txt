@@ -1,1 +1,0 @@
-outputExtensions=true,forceLong=long,unknownFields=true,initializeFieldsAsUndefined=false,useOptionals=all

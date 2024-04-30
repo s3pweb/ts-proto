@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package foo.objectid;
-
-message ObjectId {
-  string value = 1;
-}

@@ -380,7 +380,7 @@ export function isOptionalProperty(
     options.useOptionals === true || options.useOptionals === "messages" || options.useOptionals === "all";
   const optionalAll = options.useOptionals === "all";
   const deprecatedOnly = options.useOptionals === "deprecatedOnly" && field.options && field.options.deprecated;
-  const repeatedOptional = field?.options?._unknownFields?.[7777 * 8]?.pop()?.includes(1);
+  const repeatedOptional = field?.options?._unknownFields?.[7777 * 8]?.[0]?.includes(1);
 
   return (
     (repeatedOptional && isRepeated(field)) ||
